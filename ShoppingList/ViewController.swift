@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
 //  ShoppingList
-//
+//  Description: Simple Shopping List App
 //  Created by Nirav Goswami on 2022-10-25.
-//
+//  Nirav Goswami (301252385)
 
 import UIKit
 
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Stepper Value Change Listeners
     @IBAction func item1StepperValueChanged(_ sender: UIStepper) {
         item1Qty.text = Int(sender.value).description
     }
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         item5Qty.text = Int(sender.value).description
     }
     
+    // Cancle Button haandler
     @IBAction func cancelBtnPressed(_ sender: Any) {
         shoppingListName.text = "My New Shopping List"
         item1Name.text = ""
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
         item5Stepper.value = 0
     }
     
+    // Save Button Handler
     @IBAction func saveBtnPressed(_ sender: Any) {
         print("Shopping List Name: ", shoppingListName.text!)
         print("Shopping List Item 1: ", item1Name.text!, " Quantity: ", item1Qty.text!)
