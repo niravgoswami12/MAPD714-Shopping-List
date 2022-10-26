@@ -25,6 +25,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var item5Qty: UILabel!
     
     
+    @IBOutlet weak var item1Stepper: UIStepper!
+    @IBOutlet weak var item2Stepper: UIStepper!
+    @IBOutlet weak var item3Stepper: UIStepper!
+    @IBOutlet weak var item4Stepper: UIStepper!
+    @IBOutlet weak var item5Stepper: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -62,6 +68,11 @@ class ViewController: UIViewController {
         item3Qty.text = "0"
         item4Qty.text = "0"
         item5Qty.text = "0"
+        item1Stepper.value = 0
+        item2Stepper.value = 0
+        item3Stepper.value = 0
+        item4Stepper.value = 0
+        item5Stepper.value = 0
     }
     
     @IBAction func saveBtnPressed(_ sender: Any) {
