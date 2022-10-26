@@ -34,7 +34,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-gt-ugf">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My New Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-gt-ugf">
                                                 <rect key="frame" x="0.0" y="84" width="250" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="0Ui-ie-qbh"/>
@@ -72,110 +72,125 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZHN-qC-uU3" userLabel="Item Row 1">
                                                 <rect key="frame" x="0.0" y="52" width="619.66666666666663" height="32"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJc-cW-Pwi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJc-cW-Pwi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="Mh8-Kv-5p4"/>
+                                                            <constraint firstAttribute="width" constant="190" id="Mh8-Kv-5p4"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F6-Co-HH0">
-                                                        <rect key="frame" x="217.99999999999994" y="0.0" width="34.333333333333343" height="32"/>
+                                                        <rect key="frame" x="197.99999999999994" y="0.0" width="22.333333333333343" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-sd-UNE">
-                                                        <rect key="frame" x="260.33333333333337" y="0.0" width="359.33333333333337" height="32"/>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-sd-UNE">
+                                                        <rect key="frame" x="228.33333333333334" y="0.0" width="391.33333333333326" height="32"/>
+                                                        <connections>
+                                                            <action selector="item1StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M2V-gm-5j6"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qaq-Fo-v7a" userLabel="Item Row 1">
                                                 <rect key="frame" x="0.0" y="104" width="619.66666666666663" height="32"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7N-7e-z6p">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7N-7e-z6p">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="CSQ-MI-4Yt"/>
+                                                            <constraint firstAttribute="width" constant="190" id="CSQ-MI-4Yt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oo-tA-sxn">
-                                                        <rect key="frame" x="217.99999999999994" y="0.0" width="34.333333333333343" height="32"/>
+                                                        <rect key="frame" x="197.99999999999994" y="0.0" width="22.333333333333343" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-53-xpV">
-                                                        <rect key="frame" x="260.33333333333337" y="0.0" width="359.33333333333337" height="32"/>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-53-xpV">
+                                                        <rect key="frame" x="228.33333333333334" y="0.0" width="391.33333333333326" height="32"/>
+                                                        <connections>
+                                                            <action selector="item2StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="DIs-9S-O8q"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gku-bP-dUa" userLabel="Item Row 1">
                                                 <rect key="frame" x="0.0" y="156" width="619.66666666666663" height="32"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfX-Fr-fI1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfX-Fr-fI1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="NvZ-Xe-Bn7"/>
+                                                            <constraint firstAttribute="width" constant="190" id="NvZ-Xe-Bn7"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW1-7m-mx7">
-                                                        <rect key="frame" x="217.99999999999994" y="0.0" width="34.333333333333343" height="32"/>
+                                                        <rect key="frame" x="197.99999999999994" y="0.0" width="22.333333333333343" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="N3w-cx-IfN">
-                                                        <rect key="frame" x="260.33333333333337" y="0.0" width="359.33333333333337" height="32"/>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="N3w-cx-IfN">
+                                                        <rect key="frame" x="228.33333333333334" y="0.0" width="391.33333333333326" height="32"/>
+                                                        <connections>
+                                                            <action selector="item3StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FPn-gp-v80"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C1t-if-gIH" userLabel="Item Row 1">
                                                 <rect key="frame" x="0.0" y="208" width="619.66666666666663" height="32"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agA-sI-ocz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agA-sI-ocz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="2cg-4D-6fL"/>
+                                                            <constraint firstAttribute="width" constant="190" id="2cg-4D-6fL"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2St-Tf-BO3">
-                                                        <rect key="frame" x="217.99999999999994" y="0.0" width="34.333333333333343" height="32"/>
+                                                        <rect key="frame" x="197.99999999999994" y="0.0" width="22.333333333333343" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-if-kSY">
-                                                        <rect key="frame" x="260.33333333333337" y="0.0" width="359.33333333333337" height="32"/>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-if-kSY">
+                                                        <rect key="frame" x="228.33333333333334" y="0.0" width="391.33333333333326" height="32"/>
+                                                        <connections>
+                                                            <action selector="item4StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YV3-JU-CuJ"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YAc-hu-ubb" userLabel="Item Row 1">
                                                 <rect key="frame" x="0.0" y="260" width="619.66666666666663" height="32"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-QE-zx0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="32"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-QE-zx0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="ZUb-fn-qwa"/>
+                                                            <constraint firstAttribute="width" constant="190" id="ZUb-fn-qwa"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxe-x1-Ier">
-                                                        <rect key="frame" x="217.99999999999994" y="0.0" width="34.333333333333343" height="32"/>
+                                                        <rect key="frame" x="197.99999999999994" y="0.0" width="22.333333333333343" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fpo-Li-jHG">
-                                                        <rect key="frame" x="260.33333333333337" y="0.0" width="359.33333333333337" height="32"/>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fpo-Li-jHG">
+                                                        <rect key="frame" x="228.33333333333334" y="0.0" width="391.33333333333326" height="32"/>
+                                                        <connections>
+                                                            <action selector="item5StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M7V-b7-DaO"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
@@ -197,6 +212,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                                        <connections>
+                                                            <action selector="saveBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UR5-M9-4zd"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-O0-OED" userLabel="Cancel">
                                                         <rect key="frame" x="194.99999999999994" y="0.0" width="155" height="32"/>
@@ -205,6 +223,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Cancel"/>
+                                                        <connections>
+                                                            <action selector="cancelBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-9O-wOY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -238,6 +259,19 @@
                             <constraint firstItem="IQr-N4-ZWD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pG0-lH-jhc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="item1Name" destination="JJc-cW-Pwi" id="pLP-Xq-8Eq"/>
+                        <outlet property="item1Qty" destination="6F6-Co-HH0" id="jCl-MO-KW0"/>
+                        <outlet property="item2Name" destination="E7N-7e-z6p" id="PgD-Dy-HTw"/>
+                        <outlet property="item2Qty" destination="3Oo-tA-sxn" id="4vJ-C9-UHL"/>
+                        <outlet property="item3Name" destination="WfX-Fr-fI1" id="o16-iu-HQd"/>
+                        <outlet property="item3Qty" destination="PW1-7m-mx7" id="uw1-wd-T6Z"/>
+                        <outlet property="item4Name" destination="agA-sI-ocz" id="Q2w-ww-duy"/>
+                        <outlet property="item4Qty" destination="2St-Tf-BO3" id="Sob-0P-CnN"/>
+                        <outlet property="item5Name" destination="Xo7-QE-zx0" id="FSx-tD-Mth"/>
+                        <outlet property="item5Qty" destination="gxe-x1-Ier" id="ZcG-Bc-Jh1"/>
+                        <outlet property="shoppingListName" destination="Znb-gt-ugf" id="kjM-7s-lm1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
